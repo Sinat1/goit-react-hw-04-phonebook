@@ -1,0 +1,26 @@
+.filterLabel {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  padding-left: 50px;
+  padding-right: 50px;
+  width: 80%;
+  font-size: 22px;
+  color: #1f1f1f;
+}
+
+.filterInput {
+  height: 24px;
+  margin-top: 10px;
+  outline: 0.5px solid #3b5998;
+  border: 1px solid #3b5998;
+  transition-property: transform;
+}
+
+.filterInput:hover,
+.filterInput:focus {
+  transform: scale(1.03);
+}
