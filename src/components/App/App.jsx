@@ -6,7 +6,7 @@ import ContactList from 'components/ContactList';
 import Filter from 'components/Filter';
 
 export const App = () => {
-  const [contacts, setContacts] = useState(
+  const [contacts, setContacts] = useState(() =>
     JSON.parse(localStorage.getItem('contacts')) ?? [
       { id: 'id-1', name: 'Rosie Simpson', number: '459-12-56' },
       { id: 'id-2', name: 'Hermione Kline', number: '443-89-12' },
